@@ -5,12 +5,12 @@ import illustation from '../../assets/Illustration.png';
 
 const Contact = () => {
   return (
-    <div className='relative container md:px-10 py-40 lg:px-60 lg:py-72'>
-      <div className='w-1/4 absolute z-50 -left-10 -top-20 lg:left-20 lg:-top-40'>
+    <div className='relative mt-20  lg:w-9/12 mx-auto py-40'>
+      <div className='max-w-sm absolute z-50 -top-80 -left-28 md:-top-80 md:-left-20 lg:-top-80 lg:-left-20'>
         <img src={working} alt='' />
       </div>
       <ContactCard />
-      <div className='absolute -bottom-48 md:-bottom-80 lg:top-60 -z-10'>
+      <div className='absolute -bottom-48 md:-bottom-80 lg:top-20 lg:-right-36 -z-10'>
         <img src={illustation} alt='illustration' />
       </div>
     </div>
