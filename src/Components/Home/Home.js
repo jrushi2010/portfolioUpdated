@@ -6,12 +6,14 @@ import bottomImage from "../../assets/Ilustration bottom.png";
 
 const Home = () => {
   return (
-    <div className="h-screen">
-      <div className="absolute">
-        <img className="w-1/2 md:w-full" src={topImage} alt="top" />
+    <div className="relative">
+      <div className="absolute -z-10">
+        <img className="w-1/2 lg:w-full" src={topImage} alt="top" />
       </div>
-      <Header />
-      <div className="w-screen pt-32 md:w-2/3 md:pt-96 lg:pt-72  md:justify-center md:items-center flex-col md:gap-16 container">
+      <div className="absolute lg:relative z-10">
+        <Header />
+      </div>
+      <div className="w-screen pt-60 md:w-2/3 lg:pt-80 md:justify-center md:items-center flex-col container">
         <h1 className="text-2xl text-center md:text-left md:text-6xl font-bold">
           Creative UX/UI Designer <br />
           Shreyas Kulkarni
@@ -26,8 +28,8 @@ const Home = () => {
           </a>
         </div>
       </div>
-      <div className="absolute bottom-0 right-0 pt-10 md:pt-32 lg:pt-0 top-96">
-        <img className="md:w-full " src={bottomImage} alt="bottom" />
+      <div className="absolute pt-20 lg:right-0 top-96 lg:top-72">
+        <img className="w-full" src={bottomImage} alt="bottom" />
       </div>
 
     </div>

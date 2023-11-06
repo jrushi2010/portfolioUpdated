@@ -1,15 +1,45 @@
 import React from 'react'
 import './Header.css'
 import logo from '../../assets/Logo name.svg';
+import menu from '../../assets/icons8-menu-250.png';
+import { useState } from 'react';
+import close from '../../assets/Group 3439.png';
 
 const Header = () => {
+
+  const [Menu, setMenu] = useState(false);
+
+  const handleMenu = () => {
+    setMenu(!Menu);
+  }
+
   return (
-    <div className='flex flex-col md:flex-row justify-center items-center md:gap-[100px] px-[332px] pt-[40px] container'>
-      <a className='w-20 text-center'>Home</a>
-      <a className='w-20 text-center'>About me</a>
-      <img className='' src={logo} alt='logo' />
-      <a className='w-20 text-center'>Work</a>
-      <a className='w-20 text-center'>Contact</a>
+    <div className='flex justify-center items-center container py-4'>
+      <div className='hidden lg:flex justify-center items-center gap-16'>
+        <a className='w-20 text-center'>Home</a>
+        <a className='w-20 text-center'>About me</a>
+        <img className='' src={logo} alt='logo' />
+        <a className='w-20 text-center'>Work</a>
+        <a className='w-20 text-center'>Contact</a>
+      </div>
+
+      <div onClick={handleMenu} className='absolute z-10'>
+        {
+          !Menu ? <img className='fixed w-10 top-4 right-2 block lg:hidden text-white' src={menu} alt='' /> : <img className='fixed w-10 top-4 right-2 block lg:hidden' src={close} alt='' />
+
+        }
+      </div>
+      <div className='block lg:hidden'>
+        <div className={!Menu ? 'fixed top-0 h-[50%] w-full left-[-100%] ease-in-out duration-700' : 'fixed left-0 top-0 w-full h-[50%] bg-[#0F103F] ease-in-out duration-700 '}>
+          <ul className='pt-20 text-center' >
+            <li className='p-4 font-light transition duration-500 ease-out hover:ease-in cursor-pointer'>Home</li>
+            <li className='p-4 font-light transition duration-500 ease-out hover:ease-in cursor-pointer'>About me</li>
+            <li className='p-4 font-light transition duration-500 ease-out hover:ease-in cursor-pointer'>Work</li>
+            <li className='p-4 font-light transition duration-500 ease-out hover:ease-in cursor-pointer'>Contact</li>
+          </ul>
+        </div>
+      </div>
+
     </div>
   )
 }
