@@ -30,7 +30,7 @@ const Header = () => {
         }
       </div>
       <div className='block lg:hidden'>
-        <div className={!Menu ? 'fixed top-0 h-[50%] w-full left-[-100%] ease-in-out duration-700' : 'fixed left-0 top-0 w-full h-[50%] bg-[#0F103F] ease-in-out duration-700 '}>
+        <div className={!Menu ? 'fixed top-0 h-[50%] w-full left-[-100%] ease-in-out duration-700' : 'fixed left-0 top-0 w-full h-[50%] bg-indigo-900 ease-in-out duration-700 '}>
           <ul className='pt-20 text-center' >
             <li className='p-4 font-light transition duration-500 ease-out hover:ease-in cursor-pointer'>Home</li>
             <li className='p-4 font-light transition duration-500 ease-out hover:ease-in cursor-pointer'>About me</li>

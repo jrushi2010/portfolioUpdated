@@ -5,10 +5,10 @@ import './Work.css';
 
 const Work = () => {
   return (
-    <div className='relative bgImage' >
-      <div className='h-screen flex justify-center items-center'>
-        {/* <img src={background} alt='background' /> */}
-        <div className='absolute m-auto left-0 right-0 flex justify-center'>
+    <div className='lg:relative my-40 lg:mt-0' >
+      <div className='h-screen flex md:flex-none justify-center items-center'>
+        <img className='hidden lg:block' src={background} alt='background' />
+        <div className='lg:absolute m-auto left-0 right-0 flex md:flex-none justify-center'>
           <WorkCard />
         </div>
       </div>
