@@ -16,7 +16,7 @@ const Footer = () => {
   return (
     <div className='relative pb-20 -z-50'>
       <div className='absolute -left-10 -top-40 lg:-top-40'>
-        <img className='max-w-xs lg:w-full' src={footerimg} alt='' />
+        <img className='w-64 md:max-w-xs' src={footerimg} alt='' />
       </div>
       <div className='bg-[#1C1C65]'>
         <div className='flex-none text-center md:flex lg:flex justify-center items-center pt-32'>

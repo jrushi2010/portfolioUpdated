@@ -7,13 +7,17 @@ import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
-    <>
-      <Home />
-      <About />
-      <Work />
-      <Contact />
-      <Footer />
-    </>
+    <div>
+      <div className='px-5 md:px-0'>
+        <Home />
+        <About />
+        <Work />
+        <Contact />
+      </div>
+      <div className='px-0'>
+        <Footer />
+      </div>
+    </div>
   );
 }
 

@@ -10,7 +10,7 @@ const Contact = () => {
         <img src={working} alt='' />
       </div>
       <ContactCard />
-      <div className='absolute -bottom-48 md:-bottom-80 lg:top-20 lg:-right-36 -z-10'>
+      <div className='absolute -bottom-48 -right-10 md:-bottom-96 lg:top-20 lg:-right-36 -z-10'>
         <img src={illustation} alt='illustration' />
       </div>
     </div>
