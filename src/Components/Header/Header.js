@@ -14,7 +14,7 @@ const Header = () => {
   }
 
   return (
-    <div className='flex justify-center items-center container py-4'>
+    <div className='flex justify-center items-center py-4'>
       <div className='hidden lg:flex justify-center items-center gap-16'>
         <a className='w-20 text-center'>Home</a>
         <a className='w-20 text-center'>About me</a>
@@ -25,7 +25,7 @@ const Header = () => {
 
       <div onClick={handleMenu} className='absolute z-10 cursor-pointer'>
         {
-          !Menu ? <img className='fixed w-10 top-4 right-6 block lg:hidden text-white' src={menu} alt='' /> : <img className='fixed w-10 top-4 right-6 block lg:hidden' src={close} alt='' />
+          !Menu ? <img className='w-10 fixed top-10 right-10 lg:hidden text-white' src={menu} alt='' /> : <img className='w-10 fixed top-10 right-10 lg:hidden' src={close} alt='' />
 
         }
       </div>

@@ -14,18 +14,39 @@ import footerimg from '../../assets/6.png';
 
 const Footer = () => {
   return (
-    <div className='relative pb-20 -z-50'>
-      <div className='absolute -left-10 -top-40 lg:-top-40'>
-        <img className='w-64 md:max-w-xs' src={footerimg} alt='' />
+    <div className='relative lg:top-[100rem] pb-20 -z-50'>
+      <div className='absolute left-0 -top-12 md:-top-20 lg:-top-20'>
+        <img className='w-28 md:w-52' src={footerimg} alt='' />
       </div>
       <div className='bg-[#1C1C65]'>
-        <div className='flex-none text-center md:flex lg:flex justify-center items-center pt-32'>
+        <div className='grid grid-cols-12 pt-32 place-items-center'>
+          <div className='col-span-12 md:flex'>
+            <div className='flex py-4 md:px-8'>
+              <img className='px-4 text-center' src={home} alt=''></img>
+              <p className=''>Home</p>
+            </div>
+            <div className='flex py-4 md:px-8'>
+              <img className='px-4 text-center' src={about} alt=''></img>
+              <p className=''>About me</p>
+            </div>
+            <div className='flex py-4 md:px-8'>
+              <img className='px-4 text-center' src={work} alt=''></img>
+              <p className=''>Work</p>
+            </div>
+            <div className='flex py-4 md:px-8'>
+              <img className='px-4 text-center' src={contact} alt=''></img>
+              <p className=''>Contact</p>
+            </div>
+
+          </div>
+        </div>
+        {/* <div className='flex-none text-center md:flex lg:flex justify-center items-center pt-32'>
           <div className='flex justify-center px-4 lg:px-10 py-4'>
-            <img className='md:px-2' src={home} alt=''></img>
+            <img className='px-4 md:px-2' src={home} alt=''></img>
             <p className=''> Home</p>
           </div>
           <div className='flex justify-center px-4 lg:px-10 py-4'>
-            <img className='md:px-2' src={about} alt=''></img>
+            <img className='px-4 md:px-2' src={about} alt=''></img>
             <p className=''> About me</p>
           </div>
           <div className='flex justify-center px-4 lg:px-10 py-4'>
@@ -36,7 +57,7 @@ const Footer = () => {
             <img className='md:px-2' src={contact} alt=''></img>
             <p className=''> Contact</p>
           </div>
-        </div>
+        </div> */}
         <div className='py-20 flex justify-center items-center'>
           <img className='px-2' src={instagram} alt='' />
           <img className='px-2' src={twitter} alt='' />
